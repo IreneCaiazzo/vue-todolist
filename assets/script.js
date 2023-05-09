@@ -1,6 +1,20 @@
 const app = Vue.createApp({
     data(){
         return{
+            arrTodo: [
+                {
+                    text: 'fare la spesa',
+                    done: true,
+                },
+                {
+                    text: 'accompagnare nonna dal dentista',
+                    done: false,
+                },
+                {
+                    text: 'andare alle poste',
+                    done: false,
+                },
+            ]
 
         };
     },
@@ -9,3 +23,5 @@ const app = Vue.createApp({
 
     },
 });
+
+app.mount('#app')
