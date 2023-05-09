@@ -16,7 +16,7 @@
         <button @click="addTodo">Aggiungi</button>
 
         <ul>
-            <li v-for="objTodo in arrTodo">{{objTodo.text}}</li>
+            <li @click="toggleTask" v-for="objTodo in arrTodo">{{objTodo.text}}</li>
            
         </ul>
 

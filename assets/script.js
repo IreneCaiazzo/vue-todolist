@@ -2,6 +2,8 @@ const app = Vue.createApp({
     data(){
         return{
 
+            doneTask: false,
+
             newTodo: '',
 
             arrTodo: [
@@ -23,15 +25,23 @@ const app = Vue.createApp({
     },
 
     methods: { 
+
+        toggleTask(){
+
+            this.doneTask = !this.doneTask
+            console.log (this.doneTask)
+
+        },
+
         addTodo(){
+
             this.arrTodo.push({
                 text: this.newTodo,
                 done: false,
             });
             this.newTodo="";
+
         },
-
-
     },
 });
 
