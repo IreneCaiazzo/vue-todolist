@@ -23,9 +23,10 @@ const app = Vue.createApp({
     },
 
     methods: { 
-        addTodo: function(){
-            arrTodo.push('value')
-            console.log(arrTodo)
+        addTodo(){
+            this.arrTodo.push({text: this.newTodo,
+                done: false,})
+            console.log(this.arrTodo)
         }
     },
 });
