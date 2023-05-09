@@ -12,8 +12,8 @@
 <body>
     <div id="app">
 
-        <!-- <input type="text">
-        <button>Aggiungi</button> -->
+        <input v-model="newTodo" type="text">
+        <button @click="addTodo">Aggiungi</button>
 
         <ul>
             <li v-for="objTodo in arrTodo">{{objTodo.text}}</li>

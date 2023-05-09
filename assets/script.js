@@ -1,6 +1,9 @@
 const app = Vue.createApp({
     data(){
         return{
+
+            newTodo: '',
+
             arrTodo: [
                 {
                     text: 'fare la spesa',
@@ -14,13 +17,16 @@ const app = Vue.createApp({
                     text: 'andare alle poste',
                     done: false,
                 },
-            ]
+            ],
 
         };
     },
 
     methods: { 
-
+        addTodo: function(){
+            arrTodo.push('value')
+            console.log(arrTodo)
+        }
     },
 });
 
