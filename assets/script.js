@@ -27,12 +27,13 @@ const app = Vue.createApp({
         toggleTask(objTodo){
 
             objTodo.done = !objTodo.done
-            console.log (objTodo.done)
 
         },
 
        removeTodo(index){
+
            this.arrTodo.splice(index,1)
+           
        },
 
         addTodo(){
