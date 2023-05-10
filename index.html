@@ -18,7 +18,7 @@
 
         <ul>
             <li v-for="(objTodo, index) in arrTodo">
-                <span :class="{complete : doneTask}" @click="toggleTask(index)" >{{objTodo.text}} </span>
+                <span :class="{complete : objTodo.done}" @click="toggleTask(objTodo)" >{{objTodo.text}} </span>
                 <i @click="removeTodo" class="bi bi-x-circle"></i>
             </li>
            
