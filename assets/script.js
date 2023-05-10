@@ -33,7 +33,7 @@ const app = Vue.createApp({
        removeTodo(index){
 
            this.arrTodo.splice(index,1)
-           
+
        },
 
         addTodo(){
